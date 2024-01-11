@@ -18,8 +18,8 @@ def split_zip(input_file, output_directory, chunk_size):
                         chunk_zip.writestr(file_info, file_in_zip.read())
 
 if __name__ == "__main__":
-    input_file_path = "static/your_large_file.zip"  # Update with your actual file path
-    output_directory = "static/chunks"
+    input_file_path = "./VISUAL STUDIO 2019 COMMUNITY OFFLINE INSTALLER full package.zip"  # Update with your actual file path
+    output_directory = "./two/chunks"
     chunk_size = 1024 * 1024 * 1024  # 1 GB in bytes
 
     if not os.path.exists(output_directory):
